@@ -41,8 +41,9 @@ Limpeza (Delete Stack): O passo final foi selecionar a Stack Hotelaria-Image e c
 Este desafio mudou minha perspectiva sobre a criação de recursos na nuvem.
 
 Com o CloudFormation, eu ganho:
-Repetibilidade: Posso criar 10 ambientes de hotelaria idênticos com um clique.
 
-Consistência: Garanto que o ambiente de teste é exatamente igual ao de produção.
+* **Repetibilidade**: Posso criar 10 ambientes de hotelaria idênticos com um clique.
 
-Versionamento: Posso salvar meu template no GitHub e ter um histórico de todas as mudanças feitas na minha infraestrutura.
+* **Consistência**: Garanto que o ambiente de teste é exatamente igual ao de produção.
+
+* **Versionamento**: Posso salvar meu template no GitHub e ter um histórico de todas as mudanças feitas na minha infraestrutura.

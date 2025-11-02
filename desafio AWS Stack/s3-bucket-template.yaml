@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: |
+  Template CloudFormation para criar um S3 Bucket simples
+  para Hotelaria (ex: para fotos dos quartos).
+
+
+Resources:
+  
+
+  HotelImagesBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      AccessControl: Private
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+      VersioningConfiguration:
+        Status: Enabled
+
+Outputs:
+  
+  BucketName:
+    Description: O nome do S3 Bucket criado
+    Value: !Ref HotelImagesBucket 
+    Export:
+      Name: HotelImagesBucketName
